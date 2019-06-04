@@ -1,0 +1,59 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Hospital {
+
+//	public void doctors(String fName, String lName, String doctorLevel, String grade) {
+//		List<String> doctorList;
+//		
+//	}
+//	public String showInfo(String list) {
+//		System.out.println("What would you like to do?");		
+//		String option = input();
+//		if(option.equals("info")) {
+//			System.out.println("would you like the info for (doctors / patients / teams)");
+//			String i = input();	
+//			if(i.equals("doctors")){
+//				for(String items : doctorList) {
+//					System.out.println(items);
+//				}
+//			}
+//			if (i.equals("patients")) {
+//				for (String items : patientList) {
+//					System.out.println(items);
+//				}
+//			}
+//			if(i.equals("teams")) {
+//				for (String items: teamList) {
+//					System.out.println(items);
+//				}
+//			}
+//		}
+//		
+//		return list;
+//	
+//	}
+	public String admitPatients(String patientName) {
+		System.out.println("What would you like to do?");		
+		String s = input();
+		
+		if(s.equals("admit")) {
+			System.out.println("enter the first name of Patient you are admitting.");
+			String a = input();
+			System.out.println("enter the second name of the patient.");
+			String b = input();
+			String c = (a + "" + b);
+			System.out.println(c);
+			patientName = c;
+		}
+		return patientName;
+		
+	}
+	public static String input() {
+		Scanner s = new Scanner(System.in);
+		String input = s.nextLine();
+		return input;
+	}
+}
